@@ -44,11 +44,12 @@ function total() {
   var counter = 0
   var total = 0
   while (counter < getCart().length) {
+    return getCart()[counter].itemValue
     total = total + parseInt(getCart()[counter].itemValue)
     counter++
   }
   
-  return total
+  // return total
 }
 
 function removeFromCart(item) {
