@@ -33,6 +33,6 @@ function placeOrder(cardNumber) {
 
 // private
 
-function getRandomInt(){
+function getRandomInt(min, max){
   
 }
