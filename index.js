@@ -52,9 +52,11 @@ function total() {
 
 function removeFromCart(item) {
   if (item in getCart()) {
-    cart().splice(cart.item)
-
-    return getCart();
+    for (let i=0, l=getCart().length; i<l; i++) {
+      if (getCart()[i].itemName == item) {
+        cart = cart.slice()
+      }
+    }
   } else {
     
     return "That item is not in your cart."
