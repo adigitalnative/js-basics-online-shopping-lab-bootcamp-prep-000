@@ -52,7 +52,7 @@ function total() {
 
 function removeFromCart(item) {
   if (item in getCart()) {
-    return (`${getCart()}, ${item}`)
+    console.log (`${getCart()}, ${item}`)
     
     // getCart().splice(cart.indexOf(item))
     
