@@ -54,7 +54,11 @@ function removeFromCart(item) {
     }
   }
   
-  return(indexOfItemToRemove)
+  if (indexOfItemToRemove === "none") {
+    return "That item is not in your cart."
+  } else {
+    return indexOfItemToRemove
+  }
 }
 
 function placeOrder(cardNumber) {
