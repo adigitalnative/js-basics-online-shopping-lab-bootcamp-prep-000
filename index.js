@@ -51,7 +51,11 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if (item in )
+  if (item in getCart()) {
+    // remove the item
+  } else {
+    return "The item is not in your cart."
+  }
 }
 
 function placeOrder(cardNumber) {
