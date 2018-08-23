@@ -52,7 +52,7 @@ function total() {
 
 function removeFromCart(item) {
   if (item in getCart()) {
-    searchForItemToRemove()
+    // Search for the item to remove
     }
   } else {
     
