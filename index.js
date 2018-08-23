@@ -41,7 +41,14 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  var counter = 0
+  var total = 0
+  while counter < getCart().length {
+    total = total + getcart()[counter].itemValue
+    counter++
+  }
+  
+  return total
 }
 
 function removeFromCart(item) {
