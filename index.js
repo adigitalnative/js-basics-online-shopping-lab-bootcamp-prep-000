@@ -44,7 +44,7 @@ function total() {
   var counter = 0
   var total = 0
   while (counter < getCart().length) {
-    total = total + getcart()[counter].itemValue
+    total = total + getCart()[counter].itemValue
     counter++
   }
   
