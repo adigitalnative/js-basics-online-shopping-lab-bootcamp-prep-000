@@ -10,9 +10,9 @@ function setCart(c) {
 }
 
 function addToCart(item) {
-  var item = {[item] : getRandomInt(1,100) };
+  var item = generateCartItem(item);
   cart.push(item)
-  return `${item} has been added to your cart.`
+  return `${item.itemName} has been added to your cart.`
 }
 
 function viewCart() {
