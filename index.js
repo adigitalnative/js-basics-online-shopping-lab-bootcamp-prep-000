@@ -16,7 +16,12 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  // write your code here
+  const itemList = []
+  
+  for (let i = 0, l = cart.length; i < l; i++) {
+    itemList.push(`${cart.slice(i+1, i+2)}`)
+  }
+  return `In your cart, you have ${itemList}.`
 }
 
 function total() {
