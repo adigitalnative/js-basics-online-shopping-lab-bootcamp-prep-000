@@ -27,7 +27,7 @@ function viewCart() {
       descs.push(`${itemToAdd.itemName} at $${itemToAdd.itemPrice}`);
     }
     
-    return `In your cart, you have ${descs.join(", ").`
+    return `In your cart, you have ${descs.join(", ")}.`
   }
 }
 
