@@ -38,6 +38,9 @@ function getRandomInt(min, max){
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function generateCartItem() {
-  
+function generateCartItem(item) {
+  return {
+    itemName: item,
+    itemPrice: getRandomInt(1,100)
+  }
 }
