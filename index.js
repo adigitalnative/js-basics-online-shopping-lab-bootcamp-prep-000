@@ -54,8 +54,10 @@ function removeFromCart(item) {
     }
   }
   
-  if( indexOfItemToRemove) {
-    
+  if (indexOfItemToRemove) {
+    console.log (indexofItemToRemove)
+  } else {
+    return "That item is not in your cart."
   }
 }
 
