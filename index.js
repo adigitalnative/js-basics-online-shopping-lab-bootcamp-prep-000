@@ -52,7 +52,7 @@ function total() {
 
 function removeFromCart(item) {
   if (item in getCart()) {
-    // remove the item
+    
   } else {
     return "That item is not in your cart."
   }
