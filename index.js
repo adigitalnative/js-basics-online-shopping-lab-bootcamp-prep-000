@@ -27,11 +27,12 @@ function viewCart() {
     // Build an array of formatted "itemName at itemPrice"
     var counter = 0
     var descs = []
-    while (counter < getCart().length) {
+    while (counter < getCart().length-1) {
       descs.push(`${getCart()[counter].itemName} at $${getCart()[counter].itemPrice}`)
       counter++
     }
-    descs = [descs.slice(0, descs.length - 1), "and " descs[descs.length]]
+    descs.push(`and ${getCart()[counter].itemName} at $${getCart()[counter].itemPrice}`
+    
     return `In your cart, you have ${descs.join(", ")}`
     // For the last one, add oxford comma 'and'
     // Join them with a comma
