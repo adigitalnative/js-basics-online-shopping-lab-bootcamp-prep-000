@@ -41,15 +41,10 @@ function viewCart() {
 }
 
 function total() {
-  var counter = 0
-  var total = 0
-  while (counter < getCart().length) {
-    return getCart()[counter].itemValue
-    total = total + parseInt(getCart()[counter].itemValue)
-    counter++
+  total = 0
+  for(let i=0, l=getCart().length; i<l, i++) {
+    total = total + parseInt(getCart()[i].itemPrice)
   }
-  
-  // return total
 }
 
 function removeFromCart(item) {
