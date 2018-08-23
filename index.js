@@ -31,6 +31,7 @@ function viewCart() {
       descs.push(`${getCart()[counter].itemName} at $${getCart()[counter].itemPrice}`)
       counter++
     }
+    descs = [descs.slice(0, descs.length - 1), "and " descs[descs.length]]
     return `In your cart, you have ${descs.join(", ")}`
     // For the last one, add oxford comma 'and'
     // Join them with a comma
