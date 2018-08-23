@@ -31,7 +31,7 @@ function viewCart() {
       descs.push(`${getCart()[counter].itemName} at $${getCart()[counter].itemPrice}`)
       counter++
     }
-    descs.push(`and ${getCart()[counter].itemName} at $${getCart()[counter].itemPrice}`
+    descs.push(`and ${getCart()[counter].itemName} at $${getCart()[counter].itemPrice}`)
     
     return `In your cart, you have ${descs.join(", ")}`
     // For the last one, add oxford comma 'and'
