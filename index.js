@@ -34,5 +34,5 @@ function placeOrder(cardNumber) {
 // private
 
 function getRandomInt(min, max){
-  
+  return Math.
 }
