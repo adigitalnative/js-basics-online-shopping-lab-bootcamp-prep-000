@@ -20,11 +20,11 @@ function viewCart() {
     return "Your shopping cart is empty."
   } else {
     var cartClone = getCart();
-    var desc ["In your cart, you have"]
+    var desc = ["In your cart, you have"]
     
-    for(let i=0, l=getCart().length; i<l, i++) {
+    for (let i=0, l=getCart().length; i<l; i++) {
       itemToAdd = cartClone.shift
-      desc.push(`${itemToAdd.itemName} at $${itemToAdd.itemPrice}`)
+      desc.push(`${itemToAdd.itemName} at $${itemToAdd.itemPrice}`);
     }
     
     return desc
