@@ -50,10 +50,13 @@ function removeFromCart(item) {
   var indexOfItemToRemove
   for(let i=0, l=getCart().length;i<l; i++) {
     if (getCart()[i].itemName == item) {
-      console.log (i);
+      indexOfItemToRemove = i
     }
   }
-    return "That item is not in your cart."
+  
+  if( indexOfItemToRemove) {
+    
+  }
 }
 
 function placeOrder(cardNumber) {
