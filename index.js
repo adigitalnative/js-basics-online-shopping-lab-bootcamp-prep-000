@@ -57,7 +57,7 @@ function removeFromCart(item) {
   if (indexOfItemToRemove === "none") {
     return "That item is not in your cart."
   } else {
-    return getCart().splice()
+    return getCart().splice(indexOfItemToRemove, 1)
   }
 }
 
