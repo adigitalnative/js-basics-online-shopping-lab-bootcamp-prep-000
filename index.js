@@ -50,7 +50,7 @@ function removeFromCart(item) {
   var indexOfItemToRemove
   for(let i=0, l=getCart().length;i<l; i++) {
     if (getCart()[i].itemName == item) {
-      console.log `the index is ${i}.`
+      console.log i
     }
   }
     return "That item is not in your cart."
