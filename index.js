@@ -20,8 +20,10 @@ function viewCart() {
     return "Your shopping cart is empty."
   } else {
     var desc "In your cart, you have"
-    
-    
+    const cartClone = 
+    for(let i=0, l=getCart().length; i<l, i++) {
+      
+    }
   }
 }
 
