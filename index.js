@@ -19,8 +19,7 @@ function viewCart() {
   if (getCart().length === 0) {
     return "Your shopping cart is empty."
   } else if (getCart().length === 1) {
-    var items = getCart();
-    return `In your cart, you have ${items[1].itemName} at $${items[1].itemPrice}.`
+    return `In your cart, you have ${getCart()[1].itemName} at $${items[1].itemPrice}.`
   }
 }
 
