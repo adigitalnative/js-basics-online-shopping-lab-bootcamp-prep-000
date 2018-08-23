@@ -52,8 +52,8 @@ function total() {
 
 function removeFromCart(item) {
   if (item in getCart()) {
-    debugger (`${getCart()}, ${item}`)
-    
+    debugger;
+
     // getCart().splice(cart.indexOf(item))
     
     // return getCart();
