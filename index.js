@@ -27,7 +27,7 @@ function viewCart() {
       desc.push(`${itemToAdd.itemName} at $${itemToAdd.itemPrice}`);
     }
     
-    return desc
+    console.log(desc);
   }
 }
 
