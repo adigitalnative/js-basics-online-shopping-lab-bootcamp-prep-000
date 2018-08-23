@@ -52,7 +52,7 @@ function total() {
 
 function removeFromCart(item) {
   if (item in getCart()) {
-    indexOfItemToRemove = 
+    indexOfItemToRemove = cart.indexOf(item)
   }
   } else {
     
