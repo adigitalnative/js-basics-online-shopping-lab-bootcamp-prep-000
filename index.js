@@ -20,14 +20,14 @@ function viewCart() {
     return "Your shopping cart is empty."
   } else {
     var cartClone = getCart();
-    var desc = ["In your cart, you have"]
+    var descs = []
     
     for (let i=0, l=getCart().length; i<l; i++) {
       var itemToAdd = cartClone.shift
-      desc.push(`${itemToAdd.itemName} at $${itemToAdd.itemPrice}`);
+      descs.push(`${itemToAdd.itemName} at $${itemToAdd.itemPrice}`);
     }
     
-    console.log(desc);
+    return `In your cart, you have ${descs.join(", ").`
   }
 }
 
