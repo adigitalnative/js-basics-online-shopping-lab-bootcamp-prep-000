@@ -23,7 +23,7 @@ function viewCart() {
     var desc = ["In your cart, you have"]
     
     for (let i=0, l=getCart().length; i<l; i++) {
-      itemToAdd = cartClone.shift
+      var itemToAdd = cartClone.shift
       desc.push(`${itemToAdd.itemName} at $${itemToAdd.itemPrice}`);
     }
     
