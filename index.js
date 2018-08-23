@@ -52,9 +52,7 @@ function total() {
 
 function removeFromCart(item) {
   if (item in getCart()) {
-    var indexOfItemToRemove = cart.indexOf(item)
-    cart = getCart().splice(indexOfItemToRemove,1)
-    return getCart()
+    for(let i=)
   } else {
     
     return "That item is not in your cart."
