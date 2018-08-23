@@ -10,7 +10,7 @@ function setCart(c) {
 }
 
 function addToCart(item) {
-  cart.push({[item]: })
+  cart.push({[item]: getRandomInt(1,100) })
   return `${item} has been added to your cart.`
 }
 
