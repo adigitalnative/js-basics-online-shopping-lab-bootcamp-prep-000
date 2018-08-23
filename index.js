@@ -16,9 +16,9 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  if (cart.length === 0) {
+  if (getCart().length === 0) {
     return "Your shopping cart is empty."
-  } else if (cart.length === 1) {
+  } else if (getCart().length === 1) {
     return `In your cart, you have ${getCart[1].itemName} at $${getCart[1].itemPrice}.`
   }
 }
