@@ -52,10 +52,7 @@ function total() {
 
 function removeFromCart(item) {
   if (item in getCart()) {
-    for (let i=0, l=getCart().length; i<l; i++) {
-      if (getCart()[i].itemName == item) {
-        cart = cart.slice()
-      }
+    
     }
   } else {
     
