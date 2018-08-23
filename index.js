@@ -47,15 +47,10 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if (item in getCart()) {
-    for(let i=0, l=getCart().length; i<l; i++) {
-      if (getCart()[i].itemName === item) {
-      }
-    }
-  } else {
+  for(let i=0, l=getCart().length;i<l; i++) {
     
-    return "That item is not in your cart."
   }
+    return "That item is not in your cart."
 }
 
 function placeOrder(cardNumber) {
