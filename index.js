@@ -28,7 +28,7 @@ function viewCart() {
     var counter = 0
     var descs = []
     while (counter < getCart().length) {
-      descs.push(`${getCart()[counter].itemName} at ${getCart()[counter].itemPrice}`)
+      descs.push(`${getCart()[counter].itemName} at $${getCart()[counter].itemPrice}`)
       counter++
     }
     return `In your cart, you have ${descs.join(", ")}`
