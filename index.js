@@ -19,7 +19,7 @@ function viewCart() {
   if (getCart().length === 0) {
     return "Your shopping cart is empty."
   } else if (getCart().length === 1) {
-    return getCart()[1];
+    return getCart()[0];
     // return `In your cart, you have foo at $foo.`
   }
 }
